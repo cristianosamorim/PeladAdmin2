@@ -100,6 +100,7 @@ namespace PeladAdmin.TestesDeUnidade
             IDictionary<Caixa, IEnumerable<Peladeiro>> inadimplentesPorCaixa = servicoDeConsultaDeInadimplentes.Consultar(time, new DateTime(2015,3,10));
 
             //Assert
+
             Assert.IsTrue(inadimplentesPorCaixa.Count == 1);
         }
     }
